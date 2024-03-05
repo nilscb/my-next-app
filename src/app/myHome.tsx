@@ -78,8 +78,6 @@ interface Data {
   }
 
 
-
-
 export default function MyHome() {
   console.log("MyHome component redraw")
 
@@ -109,7 +107,7 @@ export default function MyHome() {
                   getPosition: d => d.position,
                   getNormal: d => d.normal,
                   getColor: d => d.color,
-                  radiusPixels: 1
+                  pointSize: 1
                 })
           ] }
         />

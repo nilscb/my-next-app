@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@meshsdk/core": "^1.5.11-beta.3",
+    "@meshsdk/react": "^1.1.10-beta.3",
     "@mui/material": "^5.15.11",
+    "@tanstack/react-query": "^5.24.1",
+    "@trpc/client": "^11.0.0-next-beta.300",
+    "@trpc/next": "^11.0.0-next-beta.300",
+    "@trpc/react-query": "^11.0.0-next-beta.300",
+    "@trpc/server": "^11.0.0-next-beta.300",
     "@webviz/subsurface-viewer": "file:../../equinor/webviz-subsurface-components/typescript/packages/subsurface-viewer/webviz-subsurface-viewer-9.9.999.tgz",
-    "next": "14.1.0",
+    "next": "^14.1.2",
     "react": "^18",
     "react-dom": "^18",
-    "worker-thread": "^1.1.0"
+    "worker-thread": "^1.1.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
