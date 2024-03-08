@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emurgo/cardano-serialization-lib-browser": "^11.5.0",
+    "@emurgo/cardano-serialization-lib-nodejs": "^11.5.0",
     "@meshsdk/core": "^1.5.11-beta.3",
     "@meshsdk/react": "^1.1.10-beta.3",
     "@mui/material": "^5.15.11",

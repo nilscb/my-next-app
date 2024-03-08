@@ -32,13 +32,13 @@ interface Data {
 }
 
     const SAMPLE_SIZE = 1e3; //1e6;
-    const SURFACE_EQUATION = (x, y) => Math.sin(x * x + y * y) * x / Math.PI;
+    const SURFACE_EQUATION = (x: number, y: number) => Math.sin(x * x + y * y) * x / Math.PI;
     const EPSILON = 1e-4;
 
     // const points = [];
     const dim = Math.sqrt(SAMPLE_SIZE);
 
-    function getPosition(u, v) {
+    function getPosition(u: number, v: number) {
       const x = (u - 1/2) * Math.PI * 2;
       const y = (v - 1/2) * Math.PI * 2;
       const z = Math.random(); //SURFACE_EQUATION(x, y);
@@ -46,7 +46,7 @@ interface Data {
       return [x, y, z];
     }
 
-    function getNormal(u, v) {
+    function getNormal(u: number, v: number) {
       const p0 = getPosition(u - EPSILON, v - EPSILON);
       const p1 = getPosition(u + EPSILON, v + EPSILON);
 
@@ -59,7 +59,7 @@ interface Data {
 
     function getPoints(): Data[] {
       console.log("getPoints CALLED")
-      const points = [];
+      const points: Data[] = [];
       for (let i = 0; i < dim; i++) {
         for (let j = 0; j < dim; j++) {
           const u = i / (dim - 1);
@@ -68,8 +68,8 @@ interface Data {
           const p = getPosition(u, v);
           const n = getNormal(u, v);
           points.push({
-            position: p,
-            normal: n,
+            position: p as [number, number, number],
+            normal: n as [number, number, number],
             color: [u *128, v *128, p[2] * 255]
           });
         }
