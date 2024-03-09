@@ -1,3 +1,8 @@
- npm i @emurgo/cardano-serialization-lib-browser
+https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/developer-account/create-your-accesses-no-medical-cloud/
 
-npm install @emurgo/cardano-serialization-lib-nodejs  // TROR KANSE DENNE VAR DET SOM TRENGTES??
+
+
+
+npm i @emurgo/cardano-serialization-lib-browser
+
+npm install @emurgo/cardano-serialization-lib-nodejs  // NIX....TROR KANSE DENNE VAR DET SOM TRENGTES??
